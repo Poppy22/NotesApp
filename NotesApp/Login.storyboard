@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aNB-r2-IGH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="KAG-La-EA8">
+            <objects>
+                <viewController id="aNB-r2-IGH" customClass="LoginViewController" customModule="NotesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ONo-TH-1Hl"/>
+                        <viewControllerLayoutGuide type="bottom" id="1cP-h3-GFT"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="6tB-gx-Ah0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ph_profile" translatesAutoresizingMaskIntoConstraints="NO" id="Eb5-I2-EfY">
+                                <rect key="frame" x="28" y="85" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="bFF-jb-LyW"/>
+                                    <constraint firstAttribute="height" constant="80" id="nna-mL-vNG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're missing all the fun." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ET1-dc-r2G">
+                                <rect key="frame" x="132" y="131" width="207" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Mht-jc-Jou"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're not logged in." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BlO-3c-LpV">
+                                <rect key="frame" x="132" y="99" width="187" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_profile" translatesAutoresizingMaskIntoConstraints="NO" id="PY3-hx-9vZ">
+                                <rect key="frame" x="55" y="347" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="dKU-go-Fnw"/>
+                                    <constraint firstAttribute="height" constant="320" id="kW3-2r-Vuz"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Its-WN-V2e">
+                                <rect key="frame" x="28" y="225" width="319" height="44"/>
+                                <color key="backgroundColor" red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ExA-Ni-mmc"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTapFbLogin:" destination="aNB-r2-IGH" eventType="touchUpInside" id="LEZ-Sd-1vX"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_facebook" translatesAutoresizingMaskIntoConstraints="NO" id="a7z-Fl-8j3">
+                                <rect key="frame" x="28" y="225" width="44" height="44"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.090196078431372548" green="0.59999999999999998" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Its-WN-V2e" secondAttribute="trailing" constant="12" id="1Yp-16-jC8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BlO-3c-LpV" secondAttribute="trailing" constant="40" id="3de-rT-AC9"/>
+                            <constraint firstItem="1cP-h3-GFT" firstAttribute="top" secondItem="PY3-hx-9vZ" secondAttribute="bottom" id="5Wr-bQ-SFt"/>
+                            <constraint firstItem="a7z-Fl-8j3" firstAttribute="top" secondItem="Its-WN-V2e" secondAttribute="top" id="8xq-x8-jjy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ET1-dc-r2G" secondAttribute="trailing" constant="20" id="HWm-DO-eqn"/>
+                            <constraint firstItem="ET1-dc-r2G" firstAttribute="top" secondItem="BlO-3c-LpV" secondAttribute="bottom" constant="8" id="N2E-wt-5l1"/>
+                            <constraint firstItem="BlO-3c-LpV" firstAttribute="leading" secondItem="Eb5-I2-EfY" secondAttribute="trailing" constant="24" id="SsH-aa-Trb"/>
+                            <constraint firstAttribute="trailing" secondItem="PY3-hx-9vZ" secondAttribute="trailing" id="Tdr-Ki-4Yp"/>
+                            <constraint firstItem="Its-WN-V2e" firstAttribute="top" secondItem="Eb5-I2-EfY" secondAttribute="bottom" constant="60" id="Z6E-Gh-Bqi"/>
+                            <constraint firstItem="BlO-3c-LpV" firstAttribute="top" secondItem="ONo-TH-1Hl" secondAttribute="bottom" constant="79" id="iiH-5g-fLO"/>
+                            <constraint firstItem="Its-WN-V2e" firstAttribute="leading" secondItem="a7z-Fl-8j3" secondAttribute="trailing" constant="-44" id="kUg-JG-JGn"/>
+                            <constraint firstItem="Its-WN-V2e" firstAttribute="leading" secondItem="6tB-gx-Ah0" secondAttribute="leadingMargin" constant="12" id="lSL-c1-RSZ"/>
+                            <constraint firstItem="Eb5-I2-EfY" firstAttribute="top" secondItem="ONo-TH-1Hl" secondAttribute="bottom" constant="65" id="mzT-Hw-gau"/>
+                            <constraint firstItem="Eb5-I2-EfY" firstAttribute="leading" secondItem="6tB-gx-Ah0" secondAttribute="leadingMargin" constant="12" id="v85-CI-1LO"/>
+                            <constraint firstItem="ET1-dc-r2G" firstAttribute="leading" secondItem="Eb5-I2-EfY" secondAttribute="trailing" constant="24" id="wA3-p3-Zuo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="Its-WN-V2e" id="fIN-aW-es5"/>
+                        <outlet property="messageLabel" destination="ET1-dc-r2G" id="ueE-x2-WzN"/>
+                        <outlet property="nameLabel" destination="BlO-3c-LpV" id="788-SX-vWi"/>
+                        <outlet property="profileImageView" destination="Eb5-I2-EfY" id="01Y-69-TPI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nl0-Wd-ozy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333.60000000000002" y="-383.65817091454278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_profile" width="320" height="320"/>
+        <image name="ic_facebook" width="44" height="44"/>
+        <image name="ph_profile" width="80" height="80"/>
+    </resources>
+</document>

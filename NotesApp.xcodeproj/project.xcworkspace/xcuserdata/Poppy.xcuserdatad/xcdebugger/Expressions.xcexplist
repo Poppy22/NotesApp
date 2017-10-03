@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "NoteDetailsViewController.collectionView(UICollectionView, numberOfItemsInSection : Int) -&gt; Int:NoteDetailsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "collectionData.count&#10;">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NoteDetailsViewController.loadNote() -&gt; ():NoteDetailsViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ImageFileDA.createImageFile() -&gt; ImageFile:ImageFileDA.swift">
+      </ContextState>
+      <ContextState
+         contextName = "BaseDA.create() -&gt; NSManagedObject:BaseDA.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "entityName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NoteDetailsViewController.imagePickerController(UIImagePickerController, didFinishPickingMediaWithInfo : [String : Any]) -&gt; ():NoteDetailsViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "NoteDetailsViewController.collectionView(UICollectionView, cellForItemAt : IndexPath) -&gt; UICollectionViewCell:NoteDetailsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "collectionData[indexPath.row]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
